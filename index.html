@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prez</title>
+    <meta charset='utf-8' />
+    <meta content='width=1024, user-scalable=no' name='viewport' />
+    <!-- deck.js's core css -->
+    <link href="deck.js/core/deck.core.css" rel="stylesheet" type="text/css"/>
+    <!-- deck.js extension CSS files -->
+    <link href="deck.js/extensions/menu/deck.menu.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/navigation/deck.navigation.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/goto/deck.goto.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/hash/deck.hash.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/status/deck.status.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/scale/deck.scale.css" rel="stylesheet" type="text/css"/>
+    <link href="deck.js/extensions/codemirror/deck.codemirror.css" rel="stylesheet" type="text/css"/>
+    <!-- all css in the css dir: Keydown CSS, your custom CSS, and themes from deck.js -->
+    <link href="css/keydown.css" rel="stylesheet" type="text/css"/>
+    <link href="css/default.css" rel="stylesheet" type="text/css"/>
+    <link href="css/prez.css" rel="stylesheet" type="text/css"/>
+    <link href="css/horizontal-slide.css" rel="stylesheet" type="text/css"/>
+    <link href="css/swiss.css" rel="stylesheet" type="text/css"/>
+    <!-- Modernizr (provided for legacy browsers) -->
+    <script src="deck.js/support/modernizr.custom.js" type="text/javascript"></script>
+  </head>
+  <body class='deck-container keydown'>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h1>LyonJS</h1>
+
+          <h2>lyonjs.org</h2>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Let's start</h2>
+
+    <p><textarea class='code' display='none' mode='javascript'>var cluster = require('cluster');&#x000A;var http = require('http');&#x000A;var numCPUs = require('os').cpus().length;&#x000A;&#x000A;if (cluster.isMaster) {&#x000A;&#x000A;  for (var i = 0; i < numCPUs; i++) {&#x000A;    cluster.fork();&#x000A;  }&#x000A;&#x000A;} else {&#x000A;&#x000A;  http.createServer(function(req, res) {&#x000A;    res.writeHead(200);&#x000A;    res.end("hello world\n");&#x000A;  }).listen(8000);&#x000A;&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Learn once, use everywhere</h2>
+
+          <p><img src="http://www.chrome-os.net/wp-content/uploads/2012/08/Firefox-OS1.jpg" alt="mobile" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Mobile</h2>
+
+          <p><img src="http://jquerymobile.com/wp-content/uploads/2012/09/jquery-mobile-logo_positive.png" alt="jquery mobile" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Mobile</h2>
+
+          <p><img src="http://blog.ippon.fr/wp-content/uploads/2012/04/phonedap-logo.png" alt="phonegap" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Learn once, use everywhere</h2>
+
+          <p><img src="http://www.lionnelweb.com/blog/wp-content/uploads/2012/03/ipad-web-design-templatemoonster.jpg" alt="tablet" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Learn once, use everywhere</h2>
+
+          <p><img src="http://www.linternaute.com/hightech/micro/dossier/donner-une-seconde-vie-a-son-pc/image/pc4-hightech-micro-342017.jpg" alt="personnal computer" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>On personnal computer</h2>
+
+          <p><img src="http://magazine.qualys.fr/wp-content/uploads/internet-explorer.jpeg" alt="Internet Explorer" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>On personnal computer</h2>
+
+          <p><img src="http://itechbook.net/wp-content/uploads/2012/08/windows-8-logo-9.png" alt="Windows 8" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>On personnal computer</h2>
+
+          <p><img src="http://www.journaldugeek.com/files/2012/01/ubuntu-logo.gif" alt="Ubuntu Unity" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>On personnal computer</h2>
+
+          <p><img src="http://joesteiger.com/wp-content/uploads/2011/07/gnome3logo.jpg" alt="Gnome Shell" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Learn once, use everywhere</h2>
+
+          <p><img src="http://www.007hebergement.com/img/data_center.jpg" alt="data center" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>DataBase</h2>
+
+    <p><img src="http://af83.com/media/post_image/69/big_logo-mongodb-onwhite.png" alt="MongoDB" /></p>
+
+    <p><textarea class='code' display='none' mode='javascript'>person = db.people.findOne( { name : "sara" } );&#x000A;person.city = "New York";&#x000A;db.people.save( person );</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>in the JVM</h2>
+
+          <p><img src="https://developer.mozilla.org/@api/deki/files/832/=Rhino.jpg" alt="Rhino" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>badass APIs boosted by V8</h2>
+
+          <p><img src="http://upload.wikimedia.org/wikipedia/en/a/a7/Nodejs_logo_light.png" alt="nodejs" /></p>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h1>What can we do with nodejs ?</h1>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Sexy command line interfaces</h2>
+
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/vFacaBinGZ0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Manipulate the DOM on the Server</h2>
+
+    <p><textarea class='code' display='none' mode='javascript'>var jsdom = require("jsdom");&#x000A;&#x000A;jsdom.env(&#x000A;  '<p><a class="the-link" href="https://github.com/tmpvar/jsdom">jsdom</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+s Homepage</a></p>',&#x000A;  ["http://code.jquery.com/jquery.js"],&#x000A;  function(errors, window) {&#x000A;    console.log("contents of a.the-link:", window.$("a.the-link").text());&#x000A;  }&#x000A;);</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Optimize you web assets</h2>
+
+          <ul>
+          <li><a href="https://github.com/mishoo/UglifyJS">uglifyjs</a></li>
+          <li><a href="https://github.com/kangax/html-minifier">html-minifier</a></li>
+          <li><a href="https://github.com/Filirom1/css-base64-images">css-base64-images</a></li>
+          </ul>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Script easily</h2>
+
+    <p><a href="http://documentup.com/arturadib/shelljs">http://documentup.com/arturadib/shelljs</a></p>
+
+    <p><textarea class='code' display='none' mode='javascript'>require('shelljs/global');&#x000A;&#x000A;if (!which('git')) {&#x000A;  echo('Sorry, this script requires git');&#x000A;  exit(1);&#x000A;}&#x000A;&#x000A;// Copy files to release dir&#x000A;mkdir('-p', 'out/Release');&#x000A;cp('-R', 'stuff/*', 'out/Release');&#x000A;&#x000A;// Replace macros in each .js file&#x000A;cd('lib');&#x000A;ls('*.js').forEach(function(file) {&#x000A;  sed('-i', 'BUILD_VERSION', 'v0.1.2', file);&#x000A;  sed('-i', /.*REMOVE_THIS_LINE.*\n/, '', file);&#x000A;  sed('-i', /.*REPLACE_LINE_WITH_MACRO.*\n/, cat('macro.js'), file);&#x000A;});&#x000A;cd('..');</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Reverse proxy</h2>
+
+          <ul>
+          <li><a href="https://github.com/nodejitsu/node-http-proxy">https://github.com/nodejitsu/node-http-proxy</a></li>
+          <li><a href="https://github.com/dotcloud/hipache">https://github.com/dotcloud/hipache</a></li>
+          <li><a href="http://apiaxle.com/">http://apiaxle.com/</a></li>
+          </ul>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Ease multi-core programming</h2>
+
+    <ul>
+    <li>One process per core</li>
+    <li>Message passing between processes</li>
+    </ul>
+
+
+    <p><textarea class='code' display='none' mode='javascript'>var cluster = require('cluster');&#x000A;var http = require('http');&#x000A;var numCPUs = require('os').cpus().length;&#x000A;&#x000A;if (cluster.isMaster) {&#x000A;&#x000A;  for (var i = 0; i < numCPUs; i++) {&#x000A;    cluster.fork();&#x000A;  }&#x000A;&#x000A;} else {&#x000A;&#x000A;  http.createServer(function(req, res) {&#x000A;    res.writeHead(200);&#x000A;    res.end("hello world\n");&#x000A;  }).listen(8000);&#x000A;&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Ease Concurrent Programming</h2>
+
+          <ul>
+          <li>Non blocking APIs</li>
+          <li>Single Loop</li>
+          </ul>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <section class='slide'>
+        <div class='spacer top'></div>
+        <div class='content'>
+          <h2>Cloud Ready</h2>
+
+          <ul>
+          <li>Heroku</li>
+          <li>Cloud Foundry</li>
+          <li>Nodejitsu</li>
+          <li>Nodester</li>
+          <li>...</li>
+          </ul>
+        </div>
+        <div class='spacer bottom'></div>
+      </section>
+    <!-- deck.js navigation extension -->
+    <a class='deck-prev-link' href='#' title='Previous'>&#8592;</a>
+    <a class='deck-next-link' href='#' title='Next'>&#8594;</a>
+    <!-- deck.js hash extension -->
+    <a class='deck-permalink' href='.' title='Permalink to this slide'>#</a>
+    <!-- deck.js status extension -->
+    <p class='deck-status'>
+      <span class='deck-status-current'></span>
+      /
+      <span class='deck-status-total'></span>
+    </p>
+    <!-- jQuery & deck.js -->
+    <script src="deck.js/support/jquery.1.6.4.min.js" type="text/javascript"></script>
+    <script src="deck.js/core/deck.core.js" type="text/javascript"></script>
+    <!-- deck.js extension JS files -->
+    <script src="deck.js/extensions/menu/deck.menu.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/navigation/deck.navigation.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/goto/deck.goto.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/hash/deck.hash.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/status/deck.status.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/scale/deck.scale.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/codemirror.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/deck.codemirror.js" type="text/javascript"></script>
+    <script src="deck.js/extensions/codemirror/mode/javascript/javascript.js" type="text/javascript"></script>
+    <!-- your custom JS here, including call to initialize deck.js-codemirror -->
+    <script src="js/prez.js" type="text/javascript"></script>
+    <!-- Initialize the deck. -->
+    <script type='text/javascript'>
+      $(function() { $.deck('.slide'); });
+    </script>
+  </body>
+</html>
